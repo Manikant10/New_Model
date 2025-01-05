@@ -1,12 +1,11 @@
 from flask import Flask, render_template
-app = Flask(__name__, template_folder='C:\\Users\\manic\\OneDrive\\Dokumen\\templates')
-
+app = Flask(__name__)
 import joblib
 import pandas as pd
 import numpy as np
 
 # Load the saved model
-model = joblib.load('loan_model.pkl')
+model = joblib.load('loan1.pkl')
 
 app = Flask(__name__)
 
